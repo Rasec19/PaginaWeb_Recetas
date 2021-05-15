@@ -1,4 +1,4 @@
-<?php include("templates/header.php");?>
+<?php include("../templates/header.php");?>
     <h1>Agregar una nueva receta</h1>
     <div>
         <form action="add-recipe.php" method="post">
@@ -15,5 +15,5 @@
             <input type="button" value="Agregar receta" name="register">
         </form>
     </div>
-    <?php include("BD/register-newRecipe.php");?>
-<?php include("templates/footer.php");?>
+    <?php include("../BD/register-newRecipe.php");?>
+<?php include("../templates/footer.php");?>

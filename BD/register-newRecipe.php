@@ -1,6 +1,6 @@
 <?php
 #Llamamos a la conexion con la base de datos
-include("BD/conexion.php");
+include("../BD/conexion.php");
 
 #Verificamos si se pulso el boto y que los inputs no esten en blanco
 if(isset($_POST['register'])){
@@ -34,6 +34,6 @@ if(isset($_POST['register'])){
         <?php
      }
 }
-include("BD/close-conexion.php");
+include("../BD/close-conexion.php");
 
 ?>
