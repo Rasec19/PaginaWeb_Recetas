@@ -1,3 +1,3 @@
-<?php include "../templates/header.php"?>
-Snacks
-<?php include "../templates/footer.php"?>
+<?php include("templates/header.php");?>
+snacks
+<?php include("templates/footer.php");?>

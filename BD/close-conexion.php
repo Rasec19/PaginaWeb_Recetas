@@ -1,0 +1,3 @@
+<?php
+$conex->close();
+?>
