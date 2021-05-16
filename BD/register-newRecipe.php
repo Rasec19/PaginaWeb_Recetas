@@ -33,6 +33,7 @@ if(isset($_POST['register'])){
             </script>";
         }
      }else{
+         #En caso de no ingresar algun dato de mostratra este alert
         echo "
         <script> 
             alert('¡Por favor ingrese todos los campos!')
@@ -40,6 +41,7 @@ if(isset($_POST['register'])){
         </script>";
      }
 }
+#Cerramos conexión con la BD
 require_once("../BD/close-conexion.php");
 
 ?>

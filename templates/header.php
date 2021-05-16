@@ -1,3 +1,5 @@
+<!-- Este codigo correponde al encabezado de pagina que se utilizara como template en toda la pagina web -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +9,8 @@
     <title>Recetario</title>
 </head>
 <body>
+
+<!-- Cremos un menu para navegar entre los tipos de recetas que habrá en la pagina web -->
 <header id="header">
     <ul>
         <a href="index.php">

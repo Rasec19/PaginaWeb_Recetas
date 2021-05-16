@@ -1,6 +1,13 @@
-<?php require("../templates/header.php");?>
+<?php
+//Agregamos el template de encabezado a la pagina 
+require("../templates/header.php");?>
+    
+    <!-- Agregamos un titulo que represente la pagina --->
     <h1>Agregar una nueva receta</h1>
+
+    <!-- Formulario con respectivos input con el cual pasaremos los datos de las recetas a la BD -->
     <div>
+        <!-- Estos datos serán mandados al archiuvo 'register-newRecipe.php dentro de la carpeta 'BD' donde se ingresaran a la base de datos' -->
         <form action="../BD/register-newRecipe.php" method="POST">
             <label>Nombre:<input type="text" name="recipeName" id=""></label>
             <label>Tipo de receta:<select name="tipeRecipe" id="">
@@ -16,4 +23,6 @@
         </form>
     </div>
    
-<?php require("../templates/footer.php");?>
+<?php
+#Agregamos el tamplate de footer a la pagina 
+require("../templates/footer.php");?>
