@@ -8,11 +8,11 @@
 </head>
 <body>
 <div id="content">
-        <form action="" method="POST" require>
-            <label>Iniciar sesión</label>
+    <h1>Iniciar sesión</h1>
+        <form action="../BD/user-login.php" method="POST" require>
             <label>Usuario:<input type="text" name="user" id="" placeholder="Ingresar usuario"></label>
             <label>Contraseña:<input type="password" name="password" id="" placeholder="Ingressar contraseña"></label>
-            <input type="button" value="Ingresar">
+            <input type="submit" value="Ingresar" name="login">
             <a href="register_User.php"><label>Nuevo usuario</label></a>
         </form>
     </div>

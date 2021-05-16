@@ -8,7 +8,7 @@
 </head>
 <body>
 <div>
-        <form action="../BD/add.newUser.php" method="POST" require>
+        <form action="../BD/add-newUser.php" method="POST" require>
             <label>Usuario:<input type="text" name="newUser" id="" placeholder="Ingresar un nuevo usuario"></label>
             <label>Contraseña:<input type="password" name="newPassword" id="" placeholder="Ingresar contraseña"></label>
             <label>Confirmar Contraseña:<input type="password" name="confirmNewPassword" id="" placeholder="Confirmar contraseña"></label>
