@@ -1,7 +1,7 @@
 <?php
     #Cremos la conexión la la base de datos en este caso llamada 'recetario_bd'
     $conex = mysqli_connect('127.0.0.1', 'root', '', 'recetario_bd');
-
+    
     #Modificamos o establecemos los caracteres en UTF8
     mysqli_set_charset($conex, "utf8");
 

@@ -1,6 +1,6 @@
 <?php
 #Llamamos a la conexion con la base de datos
-require_once("../BD/conexion.php");
+require("../BD/conexion.php");
 
 #Verificamos si se pulso el boto y que los inputs no esten en blanco
 if(isset($_POST['register'])){
@@ -42,6 +42,6 @@ if(isset($_POST['register'])){
      }
 }
 #Cerramos conexión con la BD
-require_once("../BD/close-conexion.php");
+require("../BD/close-conexion.php");
 
 ?>

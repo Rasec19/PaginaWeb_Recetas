@@ -16,23 +16,11 @@
         <a href="index.php">
             <li>Inicio</li>
         </a>
-        <a href="desayunos.php">
-            <li>Desayunos</li>
-        </a>
-        <a href="comidas.php">
-            <li>Comidas</li>
-        </a>
-        <a href="cenas.php">
-            <li>Cenas</li>
-        </a>
-        <a href="snacks.php">
-            <li>Sancks</li>
-        </a>
-        <a href="bebidas.php">
-            <li>bebidas</li>
-        </a>
         <a href="add-recipe.php">
             <li>Agregar una receta</li>
+        </a>
+        <a href="view-recipes.php">
+            <li>Buscar recetas</li>
         </a>
         <a href="login.php">
             <li>Salir</li>

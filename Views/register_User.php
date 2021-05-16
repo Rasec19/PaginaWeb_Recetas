@@ -8,13 +8,12 @@
 </head>
 <body>
 <div>
-        <form action="" method="POST" require>
+        <form action="../BD/add.newUser.php" method="POST" require>
             <label>Usuario:<input type="text" name="newUser" id="" placeholder="Ingresar un nuevo usuario"></label>
             <label>Contraseña:<input type="password" name="newPassword" id="" placeholder="Ingresar contraseña"></label>
             <label>Confirmar Contraseña:<input type="password" name="confirmNewPassword" id="" placeholder="Confirmar contraseña"></label>
             <label>Correo:<input type="email" name="email" id="" placeholder="Ingresar correo"></label>
-            <input type="radio" name="notification" id=""><label for="">Recibir notificaciónes de recetas al correo</label>
-            <input type="button" value="Registar">
+            <input type="submit" value="Registar" name="newRegister">
         </form>
     </div>
 </body>
