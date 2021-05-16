@@ -1,6 +1,6 @@
 <?php
 #Llamamos a la conexion con la base de datos
-include("../BD/conexion.php");
+require_once("../BD/conexion.php");
 
 #Verificamos si se pulso el boto y que los inputs no esten en blanco
 if(isset($_POST['register'])){
@@ -11,29 +11,35 @@ if(isset($_POST['register'])){
          $tipe = $_POST['tipeRecipe'];
          $ingredients = $_POST['ingredients'];
          $prepare = $_POST['prepare'];
-        
+         
          #Creamos la consutla INSERT
-         $query = "INSERT INTO recetas(Nombre,Tipo,Preparacion,Ingredientes) VALUES($name,$tipe,$prepare,$ingredients)";
+         $query = "INSERT INTO recetas(Nombre,Tipo,Preparacion,Ingredientes) VALUES('$name','$tipe','$prepare','$ingredients')";
         
          #Ejecutamos un resultado mediante la conexion y el query
          $result = mysqli_query($conex,$query);
         
         #Validamos el resultado
         if($result){
-            ?>
-            <h3 class="ok">¡Receta agregada correctamente!</h3>
-            <?php
+            echo "
+            <script> 
+                alert('¡Receta agregada correctamente!')
+                location.href = '../Views/add-recipe.php'
+            </script>";
         }else{
-            ?>
-            <h3 class="bad">¡Ups ha ocurrido un error!</h3>
-            <?php
+            echo "
+            <script> 
+                alert('¡Hubo un error al ingresar su receta!')
+                location.href = '../Views/add-recipe.php'
+            </script>";
         }
      }else{
-         ?>
-        <h3>¡Por favor complete los campos!</h3>
-        <?php
+        echo "
+        <script> 
+            alert('¡Por favor ingrese todos los campos!')
+            location.href = '../Views/add-recipe.php'
+        </script>";
      }
 }
-include("../BD/close-conexion.php");
+require_once("../BD/close-conexion.php");
 
 ?>
