@@ -11,6 +11,7 @@ require("../templates/header.php");?>
         <form action="../BD/register-newRecipe.php" method="POST">
             <label>Nombre:<input type="text" name="recipeName" id=""></label>
             <label>Tipo de receta:<select name="tipeRecipe" id="">
+            <option value=""></option>
             <option value="1">Desayuno</option>
             <option value="2">Comida</option>
             <option value="3">Cena</option>

@@ -9,7 +9,7 @@
 <body>
 <div id="content">
     <h1>Iniciar sesión</h1>
-        <form action="../BD/user-login.php" method="POST" require>
+        <form action="../BD/user-login.php" method="POST" require autocomplete="off">
             <label>Usuario:<input type="text" name="user" id="" placeholder="Ingresar usuario"></label>
             <label>Contraseña:<input type="password" name="password" id="" placeholder="Ingressar contraseña"></label>
             <input type="submit" value="Ingresar" name="login">
