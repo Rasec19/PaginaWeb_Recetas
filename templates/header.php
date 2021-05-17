@@ -13,16 +13,16 @@
 <!-- Cremos un menu para navegar entre los tipos de recetas que habrá en la pagina web -->
 <header id="header">
     <ul>
-        <a href="index.php">
+        <a href="../Views/index.php">
             <li>Inicio</li>
         </a>
-        <a href="add-recipe.php">
+        <a href="../Views/add-recipe.php">
             <li>Agregar una receta</li>
         </a>
-        <a href="view-recipes.php">
+        <a href="../Views/view-recipes.php">
             <li>Buscar recetas</li>
         </a>
-        <a href="login.php">
+        <a href="../Views/login.php">
             <li>Salir</li>
         </a>
     </ul>
