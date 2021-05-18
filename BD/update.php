@@ -27,14 +27,17 @@ if($result){
 }
 ?>
 <!-- TItulos de significado de la pagina -->
-<h1>Modificar recetas</h1>
+<h1 class="display-4 text-center">Modificar recetas</h1>
 <!--- Contenedor del formulario -->
-<div>
+<div class="text-center">
     <!-- Utilizaremos el array con los datos para insertarlos en este forulario, en donde se podran actualizar --->
     <form action="do-update.php" method="POST" autocomplete="off">
-    <input type="hidden" name="id" value="<?php echo $row["ID"]?>">
-    <label>Nombre:<input type="text" name="updateName" id="" value="<?php echo $row["Nombre"];?>"></label>
-            <label>Tipo de receta:<select name="updateTipe" id="">
+            <input  type="hidden" name="id" value="<?php echo $row["ID"]?>">
+            <div class="col auto">
+            <label class="col-form-label">Nombre:<input class="form-control" type="text" name="updateName" id="" value="<?php echo $row["Nombre"];?>"></label>
+            </div>
+            <div class="col auto">
+            <label class="col-form-label">Tipo de receta:<select class="form-control" name="updateTipe" id="">
             <option value="<?php echo $row['Tipo'];?>">Tipo por defecto</option>
             <option value="1">Desayuno</option>
             <option value="2">Comida</option>
@@ -42,9 +45,10 @@ if($result){
             <option value="4">Bebida</option>
             <option value="5">Snack</option>
             </select></label>
-            <label>Ingredientes:<textarea name="updateIngredients" id="" cols="30" rows="10"><?php echo $row['Ingredientes'];?></textarea></label>
-            <label>Preparación:<textarea name="updatePrepare" id="" cols="30" rows="10"><?php echo $row['Preparacion'];?></textarea></label>
-            <input type="submit" value="Modificar receta" name="update">
+            </div>
+            <label class="col-form-label">Ingredientes:<textarea class="form-control" name="updateIngredients" id="" cols="30" rows="10"><?php echo $row['Ingredientes'];?></textarea></label>
+            <label class="col-form-label">Preparación:<textarea class="form-control" name="updatePrepare" id="" cols="30" rows="10"><?php echo $row['Preparacion'];?></textarea></label><br>
+            <input type="submit" class="btn btn-primary" value="Modificar receta" name="update">
     </form>
 </div>
 <?php

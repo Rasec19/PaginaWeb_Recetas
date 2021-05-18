@@ -3,14 +3,17 @@
 require("../templates/header.php");
 ?>
     <!-- Titulos de referencia --->
-    <h1>Buscar recetas</h1>
+    <h1 class="display-4 text-center">Buscar recetas</h1>
 
     <!--Agregamos formulario con el objetivo de buscar o mostrar recetas ya sea por el tipo o su nombre -->
-    <div>
+    <div class=" text-center">
         <form action="../Views/view-recipes.php" method="POST" autocomplete="on">
-            <legend>Por favor busque un receta por nombre o tipo</legend>
-            <label>Buscar receta por su nombre:<input type="text" name="searchByName" id=""></label>
-            <label>Buscar receta por su tipo:<select name="searchByTipe" id="">
+            <legend class="display-6 texte-center">Por favor busque un receta por nombre o tipo</legend>
+            <div class="col-auto">
+            <label class="col-form-label">Buscar receta por su nombre:<input class="form-control" type="text" name="searchByName" id=""></label>
+            </div>
+            <div class="col-auto">
+            <label class="col-form-label">Buscar receta por su tipo:<select class="form-control" name="searchByTipe" id="">
             <option value=""></option>
             <option value="1">Desayuno</option>
             <option value="2">Comida</option>
@@ -18,7 +21,8 @@ require("../templates/header.php");
             <option value="4">Bebida</option>
             <option value="5">Snack</option>
             </select></label>
-            <input type="submit" value="Buscar receta" name="search">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Buscar receta" name="search">
         </form>
     </div>
     
